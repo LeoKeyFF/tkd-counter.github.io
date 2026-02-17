@@ -1,0 +1,33 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таеквон-До</title>
+    <link rel="icon" type="image/jpg" href="tkd_eitf_icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <div class="score red" id="score1">24.0</div>
+
+            <button class="button-score red" onclick="updateScore(1, -24)">0</button>
+            <button class="button-score red" onclick="updateScore(1, -0.5)">-0,5</button>
+            <button class ="button-score red" onclick="updateScore(1, -0.3)">-0,3</button>
+            <button class ="back" onclick="returnScore(1)">↩</button>
+
+        </div>
+        <div class="column">
+            <div class="score blue" id="score2">24.0</div>
+
+            <button class="button-score blue" onclick="updateScore(2, -24)">0</button>
+            <button class="button-score blue" onclick="updateScore(2, -0.5)">-0,5</button>
+            <button class="button-score blue" onclick="updateScore(2, -0.3)">-0,3</button>
+            <button class ="back" onclick="returnScore(2)">↩</button>
+
+        </div>
+    </div>
+</body>
+</html>

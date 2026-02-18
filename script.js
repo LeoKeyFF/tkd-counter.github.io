@@ -40,3 +40,25 @@ function returnScore(competitor){
     }
 
 }
+
+function openMenu() {
+    const body = $('body');
+    body.toggleClass('menu-open');
+
+    $(document).on('keydown', function(event) {
+        if (event.key === 'Escape' && body.hasClass('menu-open')) {
+            body.toggleClass('menu-open');
+        }
+    });
+};
+
+function cleen(){
+    score_blue = 24.0
+    score_red = 24.0
+
+    score_red_history = [24.0]
+    score_blue_history = [24.0]
+
+    $('#score1').text(score_red);
+    $('#score2').text(score_blue);
+}

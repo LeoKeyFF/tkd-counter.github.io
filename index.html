@@ -9,6 +9,17 @@
     <script src="jquery-3.7.1.min.js"></script>
 </head>
 <body>
+    <button class="menu-button" id="menuToggle" onclick="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <aside class="side-menu" id="sideMenu">
+        <button class="cleen" onclick="cleen()">Возобновить</button>
+    </aside> 
+
+    <div class="overlay" id="overlay"></div>
+
     <div class="row">
         <div class="column">
             <div class="score red" id="score1">24.0</div>

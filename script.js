@@ -1,8 +1,8 @@
-let score_red = 24.0
-let score_blue = 24.0
+let score_red = 24
+let score_blue = 24
 
-let score_red_history = [24.0]
-let score_blue_history = [24.0]
+let score_red_history = [24]
+let score_blue_history = [24]
 
 function updateScore(competitor, score_change){
     if (competitor == 1){
@@ -53,12 +53,14 @@ function openMenu() {
 };
 
 function cleen(){
-    score_blue = 24.0
-    score_red = 24.0
+    score_blue = 24
+    score_red = 24
 
-    score_red_history = [24.0]
-    score_blue_history = [24.0]
+    score_red_history = [24]
+    score_blue_history = [24]
 
     $('#score1').text(score_red);
     $('#score2').text(score_blue);
+
+    $('body').toggleClass('menu-open');
 }

@@ -1,5 +1,7 @@
 body{
-    background: rgba(255, 255, 255)
+    background: rgba(255, 255, 255);
+    padding: 0;
+    margin: 0;
 }
 
 div{
@@ -33,15 +35,15 @@ button {
     align-items: flex-end;
     justify-content: center;
     text-align: center;
-    font-size: 25;
+    font-size: 30;
     color: white;
 }
 .score.red {
-    background: rgb(185, 0, 0);
+    background: linear-gradient(rgb(200, 0, 0), rgb(185, 0, 0));
 }
 
 .score.blue {
-    background: rgb(0, 0, 185);
+    background: linear-gradient(rgb(0, 0, 200), rgb(0, 0, 185))
 }
 
 .button-score{
@@ -53,10 +55,10 @@ button {
     border: 0;
 }
 .button-score.red{
-    background: rgb(185, 0, 0);
+    background: linear-gradient(rgb(200, 0, 0), rgb(185, 0, 0));
 }
 .button-score.blue{
-    background: rgb(0, 0, 185);
+    background: linear-gradient(rgb(0, 0, 200), rgb(0, 0, 185))
 }
 
 .back{
@@ -67,7 +69,7 @@ button {
     align-self: center;
     aspect-ratio: 1;
     border-radius: 50%;
-    font-size: 18;
+    font-size: 22;
     color: white;
     border: 0;
 }
@@ -76,7 +78,7 @@ button {
     position: fixed;
     background: rgb(0, 126, 143) ;
     top: 30px;
-    right: 25px;
+    right: 10px;
     height: 45px;
     aspect-ratio: 1;
     border: none;
@@ -117,9 +119,9 @@ button {
 .side-menu {
     position: fixed;
     top: 0;
-    right: -40dvw;
-    width: 40dvw;
-    height: 100vh;
+    right: -80%;
+    width: 80%;
+    height: 100%;
     background: rgba(0, 151, 172);
     color: white;
     z-index: 2;
@@ -156,7 +158,7 @@ button {
 .cleen{
     padding: 0px;
     text-align: center;
-    width: 40%;
+    width: 50%;
     height: 60px;
     font-size: 22;
     color: white;
